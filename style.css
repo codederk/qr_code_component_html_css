@@ -1,0 +1,80 @@
+/* Challenge by Frontend Mentor. */
+/* Coded by Sudiarta Kaderk. */
+
+:root {
+  --color-white: hsl(0, 0%, 100%);
+  --color-light-gray: hsl(212, 45%, 89%);
+  --color-grayish-blue: hsl(220, 15%, 55%);
+  --color-dark-blue: hsl(218, 44%, 22%);
+  --body-font-size: 15px;
+  --body-font-weight: 400;
+  --body-line-height: 1.5;
+  --body-font-family: 'Outfit', sans-serif;
+  --border-radius-sm: 0.5rem;
+  --border-radius-lg: 1rem;
+  --box-shadow: 0 5px 25px hsla(218, 44%, 22%, 0.2);
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-size: var(--body-font-size);
+  font-weight: var(--body-font-weight);
+  font-family: var(--body-font-family);
+  background-color: var(--color-light-gray);
+  /* Flexbox */
+  display: flex;
+  height: 100vh;
+  justify-content: center;
+  align-items: center;
+}
+
+h1 {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-weight: 700;
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+  margin-bottom: 1rem;
+  font-size: var(--body-font-size);
+}
+
+.card {
+  background-color: var(--color-white);
+  padding: 1rem;
+  border-radius: var(--border-radius-lg);
+  text-align: center;
+  width: 340px;
+  display: flex;
+  flex-direction: column;
+  box-shadow: var(--box-shadow);
+}
+
+.card__img {
+  margin-bottom: 1rem;
+  width: 100%;
+  border-radius: var(--border-radius-sm);
+}
+
+.card__content {
+  padding: 1rem;
+}
+
+.card__content__header {
+  color: var(--color-dark-blue);
+}
+
+.card__content__description {
+  margin-bottom: 0.75rem;
+  padding: 0 0.5rem ;
+  color: var(--color-grayish-blue);
+}
+
